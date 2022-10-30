@@ -16,7 +16,7 @@ This action copies a file with nodeJS
 ## Example usage
 
 ```yaml
-uses: chpoit/js-copy-github-action@v1.0
+uses: chpoit/js-copy-github-action@master
 with:
   source: some-file
   target: some-place
