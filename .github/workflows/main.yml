@@ -1,0 +1,13 @@
+name: copy files
+on: [push]
+jobs:
+  build:
+    name: Build
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@master
+      - name: Copy file
+        uses: chpoit/js-copy-github-action@v0.1
+        with:
+          source: ./*.yml/
+          target: ~/temp-dir/
