@@ -1,17 +1,17 @@
-name: 'Copy File'
-description: 'Copies a file using nodejs'
+name: "Copy File with NodeJS"
+description: "Copies a file using nodejs"
 inputs:
-  source:  # id of input
-    description: 'Source File'
+  source: # id of input
+    description: "Source File"
     required: true
-    default: ''
-  target:  # id of input
-    description: 'Target File'
+    default: ""
+  target: # id of input
+    description: "Target File"
     required: true
-    default: ''
+    default: ""
 outputs:
   time: # id of output
-    description: 'The time we greeted you'
+    description: "The time we greeted you"
 runs:
-  using: 'node16'
-  main: 'index.js'
+  using: "node16"
+  main: "index.js"
