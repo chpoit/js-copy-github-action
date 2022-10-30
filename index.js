@@ -7,7 +7,7 @@ try {
     // `who-to-greet` input defined in action metadata file
     const sourceFile = core.getInput('source');
     const targetFile = core.getInput('target');
-    console.log(`Copying "${sourceFile}" to "${targetFile}`);
+    console.log(`Copying "${sourceFile}" to "${targetFile}"`);
 
     // fs.copyFileSync(sourceFile, targetFile);
 
@@ -15,6 +15,7 @@ try {
         if (err) {
             core.setFailed(err);
         }
+        console.log(files);
     });
 } catch (error) {
     core.setFailed(error.message);

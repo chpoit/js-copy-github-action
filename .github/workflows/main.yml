@@ -10,4 +10,4 @@ jobs:
         uses: chpoit/js-copy-github-action@master
         with:
           source: ./*.yml
-          target: ~/temp-dir/
+          target: /tmp/
