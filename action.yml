@@ -13,6 +13,9 @@ outputs:
   time: # id of output
     description: "The time we greeted you"
 runs:
-  using: "node16"
-  pre: yarn
-  main: "index.js"
+  steps:
+    - run: yarn      
+    - run: node
+        using: "node16"
+        pre: yarn
+        main: "index.js"
