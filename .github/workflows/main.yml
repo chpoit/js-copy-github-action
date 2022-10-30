@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Copy file
-        uses: chpoit/js-copy-github-action@latest
+        uses: chpoit/js-copy-github-action@master
         with:
           source: ./*.yml/
           target: ~/temp-dir/
