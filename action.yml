@@ -1,5 +1,6 @@
 name: "Copy File with NodeJS"
 description: "Copies a file using nodejs"
+labels: copy nodejs cross-platform file
 inputs:
   source: # id of input
     description: "Source File"
