@@ -9,5 +9,5 @@ jobs:
       - name: Copy file
         uses: chpoit/js-copy-github-action@master
         with:
-          source: ./*.yml/
-          target: ~/temp-dir/
+          source: ./action.yml
+          target: ~/temp-dir/action.yml
