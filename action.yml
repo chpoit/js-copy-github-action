@@ -9,13 +9,6 @@ inputs:
     description: "Target File"
     required: true
     default: ""
-outputs:
-  time: # id of output
-    description: "The time we greeted you"
 runs:
-  steps:
-    - run: yarn      
-    - run: node
-        using: "node16"
-        pre: yarn
-        main: "index.js"
+  using: "node16"
+  main: "index.js"
